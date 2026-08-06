@@ -1,15 +1,15 @@
 /* ===== CSS Variables ===== */
 :root {
-    --bg-primary: #2f2f2f;
-    --bg-secondary: #3a3a3a;
-    --bg-tertiary: #454545;
+    --bg-primary: #0a0e1a;
+    --bg-secondary: #131829;
+    --bg-tertiary: #1a2035;
     --accent-primary: #6b8afd;
     --accent-secondary: #5b7ae6;
     --accent-gradient: linear-gradient(135deg, #6b8afd 0%, #5b7ae6 100%);
     --text-primary: #ececec;
     --text-secondary: #c5c5c5;
     --text-muted: #999999;
-    --border-color: #555555;
+    --border-color: #2a3550;
     --success: #10b981;
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -26,12 +26,76 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
     font-weight: 400;
+    position: relative;
+}
+
+/* Starfield layers */
+.stars, .stars2, .stars3 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.stars {
+    box-shadow: 
+        779px 1331px #fff, 324px 42px #fff, 303px 586px #fff, 1312px 276px #fff,
+        451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff, 36px 1546px #fff,
+        132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff, 1448px 1157px #fff,
+        1084px 232px #fff, 347px 1776px #fff, 1722px 243px #fff, 1629px 835px #fff,
+        1497px 1980px #fff, 1473px 511px #fff, 1349px 1193px #fff, 1878px 1522px #fff,
+        1169px 1050px #fff, 1436px 1303px #fff, 1180px 774px #fff, 1552px 1673px #fff,
+        1467px 1563px #fff, 1726px 1300px #fff, 1613px 1735px #fff, 1850px 1729px #fff,
+        1960px 559px #fff, 1512px 1556px #fff, 1665px 451px #fff, 1429px 1143px #fff,
+        1557px 1862px #fff, 1865px 1876px #fff, 1135px 1675px #fff, 1520px 1234px #fff,
+        1605px 1062px #fff, 1696px 1452px #fff, 1815px 1896px #fff, 1749px 796px #fff,
+        1987px 1284px #fff, 1083px 1417px #fff, 1296px 1067px #fff, 1290px 1652px #fff,
+        1183px 1207px #fff, 1912px 1714px #fff, 1635px 1792px #fff, 1520px 1470px #fff,
+        1233px 1621px #fff, 1575px 1379px #fff;
+    animation: animStar 100s linear infinite;
+}
+
+.stars2 {
+    width: 2px;
+    height: 2px;
+    box-shadow: 
+        779px 1331px #fff, 324px 42px #fff, 303px 586px #fff, 1312px 276px #fff,
+        451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff, 36px 1546px #fff,
+        132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff, 1448px 1157px #fff,
+        1084px 232px #fff, 347px 1776px #fff, 1722px 243px #fff, 1629px 835px #fff,
+        1497px 1980px #fff, 1473px 511px #fff, 1349px 1193px #fff, 1878px 1522px #fff,
+        1169px 1050px #fff, 1436px 1303px #fff, 1180px 774px #fff, 1552px 1673px #fff,
+        1467px 1563px #fff;
+    animation: animStar 150s linear infinite;
+}
+
+.stars3 {
+    width: 3px;
+    height: 3px;
+    box-shadow: 
+        779px 1331px #fff, 324px 42px #fff, 303px 586px #fff, 1312px 276px #fff,
+        451px 625px #fff, 521px 1931px #fff, 1087px 1871px #fff, 36px 1546px #fff,
+        132px 934px #fff, 1698px 901px #fff, 1418px 664px #fff, 1448px 1157px #fff;
+    animation: animStar 200s linear infinite;
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
 }
 
 /* ===== Navigation ===== */
@@ -39,7 +103,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(47, 47, 47, 0.95);
+    background-color: rgba(10, 14, 26, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -229,6 +293,14 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content,
+.hero-text {
+    position: relative;
+    z-index: 1;
 }
 
 /* ===== Section Title ===== */
@@ -260,6 +332,8 @@ body {
 .about {
     padding: 6rem 0;
     background-color: var(--bg-secondary);
+    position: relative;
+    z-index: 1;
 }
 
 .about-content {
@@ -312,6 +386,8 @@ body {
 /* ===== Projects Section ===== */
 .projects {
     padding: 6rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .projects-grid {
@@ -358,6 +434,7 @@ body {
     font-size: 0.8rem;
     font-weight: 500;
     border: 1px solid var(--border-color);
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 .project-title {
@@ -419,6 +496,8 @@ body {
 .skills {
     padding: 6rem 0;
     background: var(--bg-secondary);
+    position: relative;
+    z-index: 1;
 }
 
 .skills-grid {
@@ -472,6 +551,8 @@ body {
 /* ===== Contact Section ===== */
 .contact {
     padding: 6rem 0;
+    position: relative;
+    z-index: 1;
 }
 
 .contact-description {
@@ -539,6 +620,8 @@ body {
     border-top: 1px solid var(--border-color);
     text-align: center;
     color: var(--text-muted);
+    position: relative;
+    z-index: 1;
 }
 
 /* ===== Responsive Design ===== */

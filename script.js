@@ -49,10 +49,10 @@ window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
     
     if (currentScroll > 50) {
-        navbar.style.backgroundColor = 'rgba(47, 47, 47, 0.98)';
-        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.4)';
+        navbar.style.backgroundColor = 'rgba(10, 14, 26, 0.95)';
+        navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.5)';
     } else {
-        navbar.style.backgroundColor = 'rgba(47, 47, 47, 0.95)';
+        navbar.style.backgroundColor = 'rgba(10, 14, 26, 0.9)';
         navbar.style.boxShadow = 'none';
     }
     

@@ -16,7 +16,7 @@ cutting, crimping, lug terminal termination, and routing based on job traveler s
 • Prepared customer quotes from specifications and parts catalogs, managed inbound inventory by logging received items into an
 internal database, and coordinated outbound shipments including palletizing and truck loading
 PROJECTS
-Coverage Copilot: RAG-Based Benefits Q&A System 2025 – Present
+Coverage Copilot: RAG-Based Benefits Q&A System Jul 2026 – Present
 Personal Project
 • GitHub: github.com/rwolpert8/Coverage-Copilot
 • Built a retrieval-augmented generation app enabling members to query MASA's emergency medical transportation benefits using a
