@@ -111,6 +111,23 @@ nav a:last-child span {
   color:#646460;
   margin:0 6px;
 }
+.hero-heading {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,320px);
+  align-items:center;
+  gap:40px;
+  margin:38px 0 43px;
+}
+.hero-portrait {
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid var(--line);
+  border-radius:3px;
+}
+.hero-heading .headline {
+  margin:0;
+}
 .headline {
   font-family:var(--display);
   font-weight:600;
@@ -775,5 +792,23 @@ nav a:last-child span {
   }
   *,*::before,*::after {
     transition:none!important;
+  }
+}
+
+@media(min-width:721px) and (max-width:1000px) {
+  .hero-heading {
+    grid-template-columns:minmax(0,1fr) minmax(0,27vw);
+    gap:24px;
+  }
+}
+@media(max-width:720px) {
+  .hero-heading {
+    grid-template-columns:minmax(0,1fr);
+    gap:28px;
+    margin:32px 0;
+  }
+  .hero-portrait {
+    width:min(100%,280px);
+    justify-self:center;
   }
 }
