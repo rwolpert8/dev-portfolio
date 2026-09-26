@@ -1,339 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan Wolpert | ML & Full-Stack Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Ryan Wolpert — computer science graduate building thoughtful full-stack applications and machine learning projects. Explore PetSnap, Coverage Copilot, and HighHeat.">
+  <title>Ryan Wolpert — Software & Machine Learning</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23ff8200'/%3E%3Ctext x='9' y='44' font-family='monospace' font-size='34' font-weight='bold'%3Erw%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Starfield -->
-    <div class="stars"></div>
-    <div class="stars2"></div>
-    <div class="stars3"></div>
-    
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">RW</a>
-            <div class="nav-menu" id="navMenu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">
-                    <span class="gradient-text">Ryan Wolpert</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Computer Science graduate building <span class="highlight">AI-powered applications</span> 
-                    and <span class="highlight">full-stack solutions</span> that solve real problems.
-                </p>
-                <p class="hero-description">
-                    Specializing in machine learning, RAG systems, and modern web development. 
-                    Currently seeking entry-level opportunities in ML/AI engineering and frontend development.
-                </p>
-                <div class="hero-links">
-                    <a href="mailto:rwolpert@alum.utk.edu" class="btn btn-primary" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                        Email
-                    </a>
-                    <a href="https://linkedin.com/in/ryan-wolpert-utk" class="btn btn-secondary" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                        </svg>
-                        LinkedIn
-                    </a>
-                    <a href="https://github.com/rwolpert8" class="btn btn-secondary" target="_blank">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="#" class="btn btn-secondary" id="resumeLink">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                        Resume
-                    </a>
-                </div>
-            </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="#home" aria-label="Ryan Wolpert, home">rw<span>.</span></a>
+    <nav aria-label="Main navigation"><a href="#projects">Work</a><a href="#about">About</a><a href="#contact">Let’s talk <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" id="home" aria-labelledby="hero-title">
+      <div class="eyebrow"><span class="status-dot"></span> RYAN WOLPERT <span class="eyebrow-divider">/</span> SOFTWARE & MACHINE LEARNING</div>
+      <h1 id="hero-title" class="headline"><span>Curiosity,</span><span>built into</span><span class="orange">software<span class="period">.</span></span></h1>
+      <div class="hero-bottom">
+        <div><p class="hero-intro">I’m Ryan, a computer science graduate turning<br class="desktop-break"> curious questions into things you can use.</p><div class="hero-actions"><a class="button" href="mailto:rwolpert@alum.utk.edu">Email me <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/rwolpert8" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div></div>
+        <div class="hero-note"><span class="tiny-label">BASED IN JACKSONVILLE, FL</span><p>Open to entry-level opportunities<br>in software, ML, and data.</p><a href="#projects" class="scroll-link">Explore my work <span aria-hidden="true">↓</span></a></div>
+      </div>
     </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I am a Computer Science graduate of the <strong>University of Tennessee, Knoxville</strong>, 
-                        graduating in May 2026. My passion lies at the intersection of artificial intelligence 
-                        and practical software development.
-                    </p>
-                    <p>
-                        I have built production-ready applications featuring <strong>RAG systems</strong>, 
-                        <strong>deep learning models</strong>, and <strong>real-time data pipelines</strong>. 
-                        I'm comfortable across the entire stack—from training neural networks with PyTorch to 
-                        building responsive frontends with React.
-                    </p>
-                    <p>
-                        When I'm not coding, you'll find me experimenting with new ML architectures, 
-                        contributing to open-source projects, or learning about the latest advances in AI.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">3</div>
-                            <div class="stat-label">Major Projects</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Technologies</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">2026</div>
-                            <div class="stat-label">Graduation</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="projects wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-heading"><h2 id="projects-title"><span class="section-number">01 /</span> Selected work</h2><span class="tiny-label">A FEW QUESTIONS I’VE BUILT ANSWERS TO</span></div>
+      <article class="featured-project">
+        <div class="project-copy"><div class="project-kicker"><span class="orange">FEATURED PROJECT</span><span>2025 — ONGOING</span></div><h3>PetSnap<span class="orange">.</span></h3><p class="project-subtitle">A little curiosity. 120 dog breeds.</p><p>As a kid, I’d step outside and wonder what kind of bird, lizard, or frog I was looking at. Years later, learning about convolutional neural networks at UT gave me a way to answer that question.</p><p>PetSnap started with all animals. I narrowed the scope to dogs so I could build it well on my own—from training the model to building the app around it.</p><ul class="tags" aria-label="PetSnap technologies"><li>PyTorch</li><li>Python</li><li>CUDA</li><li>Computer vision</li></ul><div class="project-links"><a class="text-link" href="https://github.com/rwolpert8/PetSnap" target="_blank" rel="noopener noreferrer">Explore the code <span aria-hidden="true">↗</span></a><span class="demo-status"><span class="status-dot"></span> Public demo in progress</span></div></div>
+        <div class="project-visual" aria-label="PetSnap pipeline: dog images are processed by a convolutional neural network to recognize one of 120 breeds.">
+          <div class="visual-top"><span>PETSNAP / UNDER THE HOOD</span><span aria-hidden="true">↗</span></div>
+          <div class="pipeline-art" aria-hidden="true"><div class="image-stack"><div></div><div></div><div><svg viewBox="0 0 120 120" fill="none"><path d="M36 40 20 27 11 66 30 73M84 40l16-13 9 39-19 7" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/><path d="M32 48c0-23 56-23 56 0v30c0 28-56 28-56 0Z" stroke="currentColor" stroke-width="3"/><circle cx="46" cy="61" r="4" fill="currentColor"/><circle cx="74" cy="61" r="4" fill="currentColor"/><path d="m53 77 7 7 7-7Z" fill="currentColor"/><path d="M60 84v7m-9 0c3 5 6 4 9 0 3 4 6 5 9 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div></div><span class="pipeline-connector">→</span><div class="model-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="pipeline-connector">→</span><div class="output-mark">120<span>BREEDS</span></div></div>
+          <div class="pipeline-labels" aria-hidden="true"><span>IMAGE INPUT</span><span>CNN MODEL</span><span>RECOGNITION</span></div>
+          <div class="visual-caption">From “what dog is that?”<br>to a model that can answer.</div>
+          <div class="project-stats"><div><strong>20k+</strong><span>Training images</span></div><div><strong>120</strong><span>Dog breeds</span></div><div><strong>92%</strong><span>Classification accuracy</span></div></div><p class="metric-note">Trained on the Stanford Dogs dataset.</p>
         </div>
+      </article>
+      <div class="other-projects">
+        <article class="project-card"><div class="card-top"><span class="tiny-label">02 / APPLIED AI · 2026</span><span class="card-symbol" aria-hidden="true">[↗]</span></div><h3>Coverage Copilot</h3><p class="project-subtitle">Benefits questions, grounded answers.</p><p>A full-stack RAG app that answers questions about MASA’s emergency transportation benefits using its public FAQ and benefits pages. Built with query logging, a stats dashboard, and a 12-question evaluation set running in CI.</p><ul class="tags" aria-label="Coverage Copilot technologies"><li>React</li><li>FastAPI</li><li>pgvector</li><li>Claude API</li></ul><a class="text-link" href="https://github.com/rwolpert8/Coverage-Copilot" target="_blank" rel="noopener noreferrer">Explore the code <span aria-hidden="true">↗</span></a></article>
+        <article class="project-card"><div class="card-top"><span class="tiny-label">03 / TEAM PROJECT · 2025</span><span class="card-symbol" aria-hidden="true">⌁</span></div><h3>HighHeat</h3><p class="project-subtitle">From the pitch to the screen.</p><p>A baseball pitch tracking system built by a six-person team for UT’s Software Engineering course. I owned the React frontend, helped annotate the dataset in Roboflow, and worked with the backend team to connect ML inference to the interface.</p><ul class="tags" aria-label="HighHeat technologies"><li>React</li><li>Roboflow</li><li>API integration</li><li>Data visualization</li></ul><a class="text-link" href="https://github.com/utk-cs340-fall25/HighHeat" target="_blank" rel="noopener noreferrer">Explore the code <span aria-hidden="true">↗</span></a></article>
+      </div>
     </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Coverage Copilot -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-tags">
-                            <span class="tag">RAG</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">React</span>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Coverage Copilot</h3>
-                    <p class="project-description">
-                        Retrieval-augmented generation system enabling members to query emergency medical 
-                        transportation benefits through a conversational interface. Built full-stack architecture 
-                        with React frontend, FastAPI backend, pgvector for similarity search, and Claude API for 
-                        answer generation.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">✓ Local ONNX-based embeddings with fastembed</div>
-                        <div class="highlight-item">✓ Query logging pipeline tracking retrieval metrics</div>
-                        <div class="highlight-item">✓ CI workflow with 12-question golden eval set</div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/rwolpert8/Coverage-Copilot" class="project-link" target="_blank">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            View Code
-                        </a>
-                        <span class="project-date">2025 – Present</span>
-                    </div>
-                </div>
-
-                <!-- PetSnap -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">CUDA</span>
-                        </div>
-                    </div>
-                    <h3 class="project-title">PetSnap</h3>
-                    <p class="project-description">
-                        AI-powered dog breed recognition system using a convolutional neural network trained on 
-                        20,000+ images from the Stanford Dogs dataset. Achieved 92% classification accuracy across 
-                        120 dog breeds with GPU-accelerated training.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">✓ 92% classification accuracy on 120 breeds</div>
-                        <div class="highlight-item">✓ 75% training time reduction with CUDA</div>
-                        <div class="highlight-item">✓ Automated breed info scraping pipeline</div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/rwolpert8/PetSnap" class="project-link" target="_blank">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            View Code
-                        </a>
-                        <span class="project-date">May – Aug 2025</span>
-                    </div>
-                </div>
-
-                <!-- HighHeat -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-tags">
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Team Project</span>
-                        </div>
-                    </div>
-                    <h3 class="project-title">HighHeat</h3>
-                    <p class="project-description">
-                        Real-time baseball pitch tracking system using computer vision. Led frontend development 
-                        in a 6-member team, building component-based React architecture with real-time data 
-                        visualization and sub-second API response times.
-                    </p>
-                    <div class="project-highlights">
-                        <div class="highlight-item">✓ Trained on 5,000+ annotated pitch sequences</div>
-                        <div class="highlight-item">✓ Real-time analytics pipeline</div>
-                        <div class="highlight-item">✓ Led frontend development with React</div>
-                    </div>
-                    <div class="project-footer">
-                        <a href="https://github.com/utk-cs340-fall25/HighHeat" class="project-link" target="_blank">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            View Code
-                        </a>
-                        <span class="project-date">Aug – Dec 2025</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Languages</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
-                        <span class="skill-item">JavaScript</span>
-                        <span class="skill-item">TypeScript</span>
-                        <span class="skill-item">Java</span>
-                        <span class="skill-item">C++</span>
-                        <span class="skill-item">SQL</span>
-                        <span class="skill-item">HTML/CSS</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">ML & AI</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">Scikit-learn</span>
-                        <span class="skill-item">OpenAI API</span>
-                        <span class="skill-item">Claude API</span>
-                        <span class="skill-item">CUDA</span>
-                        <span class="skill-item">Computer Vision</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Web Development</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">React</span>
-                        <span class="skill-item">Node.js</span>
-                        <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">RESTful APIs</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">pgvector</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Tools & Practices</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Git/GitHub</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">CI/CD</span>
-                        <span class="skill-item">Agile/Scrum</span>
-                        <span class="skill-item">NumPy/Pandas</span>
-                        <span class="skill-item">BeautifulSoup</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-description">
-                I'm currently seeking entry-level opportunities in ML/AI engineering and frontend development. 
-                Let's chat about how I can contribute to your team!
-            </p>
-            <div class="contact-links">
-                <a href="mailto:rwolpert@alum.utk.edu" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-label">Email</div>
-                        <div class="contact-value">rwolpert@alum.utk.edu</div>
-                    </div>
-                </a>
-                <a href="https://linkedin.com/in/ryan-wolpert-utk" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                        </svg>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-label">LinkedIn</div>
-                        <div class="contact-value">ryan-wolpert-utk</div>
-                    </div>
-                </a>
-                <a href="https://github.com/rwolpert8" class="contact-card" target="_blank">
-                    <div class="contact-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </div>
-                    <div class="contact-info">
-                        <div class="contact-label">GitHub</div>
-                        <div class="contact-value">rwolpert8</div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Ryan Wolpert. Built with curiosity and caffeine.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <section class="about wrap" id="about" aria-labelledby="about-title"><div class="section-heading"><h2 id="about-title"><span class="section-number">02 /</span> A bit about me</h2></div><div class="about-grid"><div class="about-statement">A curious mind.<br>A practical approach.<br><span class="muted">Always building.</span></div><div class="about-copy"><p>I graduated from the University of Tennessee, Knoxville with a B.S. in Computer Science in May 2026. An Intro to Machine Learning course helped turn a childhood interest in identifying animals into my favorite project, PetSnap.</p><p>I enjoy working across the whole problem: preparing data, training a model, connecting an API, and making an interface people can actually use.</p><div class="experience"><span class="tiny-label orange">BEFORE THE CODE</span><h3>Union Connector <span>Engineering Assistant</span></h3><span class="tiny-label">NOV 2021 — SUMMER 2025</span><p>On a small, diverse team, I moved between equipment assembly, fabrication, customer quotes, and shipping. It taught me to adapt, pay attention to details, and understand how my work fits into the bigger picture.</p></div><a class="text-link" href="https://drive.google.com/file/d/1f3lb-_Fm9NHwbSOeBdlq-ixAZktOtvYf/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Read my résumé <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title"><div class="tiny-label orange">03 / WHAT’S NEXT?</div><h2 id="contact-title">Let’s build<br>something <span class="orange">good.</span></h2><div class="contact-bottom"><p>I’m looking for my first role in software engineering,<br class="desktop-break"> frontend, full-stack, AI/ML, or data science.<br>Have something in mind? I’d love to hear about it.</p><a class="contact-email" href="mailto:rwolpert@alum.utk.edu">rwolpert@alum.utk.edu <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><div class="footer-main"><span>© <span id="year">2026</span> Ryan Wolpert</span><div><a href="https://github.com/rwolpert8" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/rwolpert8/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></div></div><p class="vols">Go Vols! <span aria-hidden="true">✳</span></p></footer>
 </body>
 </html>
