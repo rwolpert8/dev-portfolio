@@ -313,10 +313,6 @@ nav a:last-child span {
   color:#babba5;
   font-size:8px;
 }
-.visual-top>span:last-child {
-  color:var(--orange);
-  font-size:18px;
-}
 .pipeline-art {
   display:flex;
   align-items:center;
@@ -441,14 +437,11 @@ nav a:last-child span {
   flex-direction:column;
 }
 .card-top {
+  min-height:45.5px;
   display:flex;
   justify-content:space-between;
   align-items:center;
   color:var(--muted);
-}
-.card-symbol {
-  color:var(--orange);
-  font:26px var(--mono);
 }
 .project-card h3 {
   font:500 29px var(--display);
