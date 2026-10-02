@@ -1,6 +1,6 @@
 # Portfolio content checklist
 
-- [ ] Add PetSnap’s public demo link when available.
+- [x] Add PetSnap’s public demo link.
 - [ ] Replace or supplement the PetSnap pipeline illustration with a real product screenshot when ready.
 - [ ] Keep project descriptions, dates, and résumé up to date.
 - [ ] Recheck external project and contact links after changes.

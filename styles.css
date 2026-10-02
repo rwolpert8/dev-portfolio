@@ -53,7 +53,7 @@ a:focus-visible,button:focus-visible {
 .muted {
   color:var(--muted);
 }
-.tiny-label,.eyebrow,.project-kicker,.visual-top,.pipeline-labels,.demo-status {
+.tiny-label,.eyebrow,.project-kicker,.visual-top,.pipeline-labels {
   font-family:var(--mono);
   font-size:10px;
   letter-spacing:1px;
@@ -283,18 +283,6 @@ nav a:last-child span {
   gap:24px;
   align-items:center;
   flex-wrap:wrap;
-}
-.demo-status {
-  font-size:8px;
-  letter-spacing:0;
-  color:var(--muted);
-  display:flex;
-  gap:7px;
-  align-items:center;
-}
-.demo-status .status-dot {
-  width:4px;
-  height:4px;
 }
 .project-visual {
   border-left:1px solid var(--line);

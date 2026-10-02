@@ -20,7 +20,7 @@ Run `python -m http.server 8000` from this directory and visit http://localhost:
 - `script.js`: footer year.
 - `resume.md`: source résumé. The About section links to the hosted Google Drive résumé.
 
-When PetSnap’s public demo is ready, replace the “Public demo in progress” text with its actual link. The project graphic is a pipeline illustration, not a screenshot of the app.
+PetSnap’s featured section links to its public Railway demo alongside the GitHub repository. The project graphic is a pipeline illustration, not a screenshot of the app.
 
 ## Hosting
 
